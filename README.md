@@ -28,3 +28,5 @@ npx ng build
 ```
 
 產出的檔案會在 `dist/` 目錄中。
+
+2026/04/02 IBM Daniel Yeh
