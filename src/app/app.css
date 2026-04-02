@@ -1,0 +1,29 @@
+:host {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.main-layout {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.book-list-section { flex: 2; }
+.cart-section { flex: 1; position: sticky; top: 24px; }
+h2 { color: #2c3e50; margin-top: 0; }
+.book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+
+@media (max-width: 768px) {
+  .main-layout { flex-direction: column; }
+  .cart-section { position: static; width: 100%; }
+}
